@@ -16,7 +16,7 @@ while startapp:
     # we are selecting if we are continuing as deafult user or new user
     question = 'Do you want to continue as '+spy.salutation+' '+spy.name+'(Y/N)?'
     existing = raw_input(question)
-    #we have created the add status function
+    # we have created the add status function
     def add_status():
         updated_status_message = None
 
@@ -38,7 +38,7 @@ while startapp:
 
         elif default.upper() == 'Y':
             item_position = 1
-
+            # here for message in status_messages means that all the messages in status_message list will be recorded in message and shown that is it will traverse all list
             for message in status_messages:
                 print '%d. %s'%(item_position,message)
                 item_position = item_position + 1
