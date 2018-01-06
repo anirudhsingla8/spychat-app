@@ -40,6 +40,8 @@ while startapp:
             item_position = 1
             # here for message in status_messages means that all the messages in status_message list will be recorded in message and shown that is it will traverse all list
             for message in status_messages:
+                # %s is used as a placeholder for string values you want inject into a formatted string.
+                # %d is used as a placeholder for numeric or decimal values.
                 print '%d. %s'%(item_position,message)
                 item_position = item_position + 1
 
